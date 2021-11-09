@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+header{
+    padding: 1.5rem;
+    display:flex;
+    justify-content: space-between;
+    color: #C0531A;
+    
+}
+.title{
+    font-family: 'philosopher';
+    font-size: 2.563rem;
+}
+.hero{
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+ul{
+    display:flex;
+}
+li{
+    font-family: 'philosopher';
+    list-style-type: none;
+}
+ul a:hover{
+    background-color: #212121;
+    border-radius: 12px;
+    color: #fff;
+}
+ul a{
+    color: #C0531A;
+    padding: 1rem;
+    margin: 1rem 1rem;
+    font-size: 2.563rem;
+    transition: .3s ease;
+    text-decoration: none;
+}
+.hero-content{
+    display: flex;
+}
+.hero-text{
+    margin-top: 3rem;
+    font-size: 2.4rem;
+    font-family: 'philosopher';
+    padding: 3rem;
+}
+.hero-text button{
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #DFA98C;
+    background-color: #212121;
+    outline: none;
+    transition: 0.2s ease-in-out;
+    border:none;
+    border-radius: 12px;
+    font-family: 'montserrat';
+    font-weight: bold;
+}
+.hero-text button:hover{
+    background-color: #fff;
+    color: #212121;
+    cursor: pointer;
+}
+.hero-img img{
+    background-img: url('img/hero.svg');
+}
+.body{
+    background-color: #DFA98C;
+    padding: 4rem;
+}
+.body-content{
+    padding: 1rem;
+
+}
+.body-content-title h1{
+    margin-bottom: 4rem;
+    font-family: 'philosopher';
+    text-align: center;
+    font-size: 2.563rem;
+}
+.body-content-card{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    flex-direction: column;
+}
+.body-content-card h1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.999rem;
+    font-family: 'philosopher';
+}
+.body-content-card p{
+    margin-top: 1rem;
+    font-size: 1.414rem;
+    margin-bottom: 1rem;
+    font-family: 'montserrat';
+    font-weight: 500;
+}
+.body-content-card-group{
+    display:flex;
+    justify-items:center;
+}
+.faq{
+    padding: 4rem;
+}
+.faq-content-text h1{
+    margin-bottom: 4rem;
+    font-size: 2.563rem;
+    font-family: 'philosopher';
+}
+
+.faq-content-text p{
+    font-size: 1.999rem;
+    font-family: 'montserrat';
+    font-weight: 500;
+}
+.faq-content{
+    display:flex;
+    justify-content:space-evenly;
+}
+footer{
+    background-color: #212121;
+    padding: 2rem;
+    display:flex;
+    justify-content: space-around;
+}
+.subscribe, .find,.quick{
+    color:#fff;
+    font-family:'philosopher';
+    display:flex;
+    flex-direction: column;
+}
+.subscribe h1{
+    font-size: 1.999rem;
+}
+.subscribe input{
+    margin-top: 2rem;
+    color: #212121;
+    background-color: #fff;
+    padding: 1rem 12rem 1rem 0rem;
+    font-size: 1rem;
+    font-family: 'montserrat';
+    border:none;
+    border-radius: 8px;
+}
+.subscribe button{
+    margin-top: 1rem;
+    color: #fff;
+    background-color: #C0531A;
+    padding: 1rem 4rem 1rem 0rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'montserrat';
+    border:none;
+    border-radius: 8px;
+    cursor:pointer;
+    width: 50%;
+}
+.find .socmed, .find .addres{
+    display:flex;
+    margin-top: 1rem;
+}
+.find .socmed img{
+    margin-right: 2rem;
+}
+.find .addres p{
+    font-family: 'montserrat';
+    font-weight: 500;
+    font-size: 1rem; 
+    padding: 1rem;
+}
+.quickLinks a{
+    display:flex;
+    flex-direction: column;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'montserrat';
+    margin-top: 1rem;
+
+}
+.openMenu {
+    display:none;
+    cursor:pointer;
+    font-size: 2rem;
+    margin: 20px;
+}
+nav .mainMenu .closeMenu { 
+    display:none;
+    cursor:pointer;
+    font-size: 2rem;
+}
+@media (max-width: 858px){
+    header{
+        display:flex;
+        justify-content: space-between;
+    }
+    .title{
+        font-size: 1.8rem;
+    }
+    .hero-text{
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    .hero-text button{
+        padding: 12px;
+        font-size: 1rem;
+    }
+    
+    .faq-content-img img{
+        display:flex;
+        width: 80%;
+        justify-content:center;
+    }
+    .hero-img img{
+        display:none;
+    }
+    .body-content-card{
+        text-align:center;
+    }
+    .body-content-card-group{
+        display:flex;
+        justify-items:center;
+        flex-direction: column;
+    }
+    .faq-content-text p{
+        font-size: 1.2rem;
+    }
+    .faq-content-text h1{
+        margin-bottom: 1rem;
+    }
+    .faq-content{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        text-align:start;
+        justify-items:flex-start;
+
+    }
+    footer{
+        display:flex;
+        flex-direction: column;
+    }
+    .subscribe button{
+        width: 70%;
+    }
+    nav .mainMenu{
+        height: 100%;
+        position:fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index; 9999999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #212121;
+        transition: top 1s ease;
+        display:none;
+    }
+    nav .mainMenu .closeMenu {
+        display:block;
+        position:absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .openMenu {
+        display:flex;
+        margin-top: -1px;
+    }
+}
